@@ -1,6 +1,6 @@
 # auto-commit
 
-![Alt Text](/public/demo_screenshot.png)
+![Alt Text](/public/demo.gif)
 Improve workflow and efficiency by generating commit messages using the GPT-3 model.
 
 ## Installation
