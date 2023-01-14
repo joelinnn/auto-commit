@@ -24,7 +24,7 @@ const commit = () => {
           max_tokens: 2000,
         })
         exec(`git commit -m '${commitMessage.data.choices[0].text}'`)
-        console.log(chalk.green.bold(`Created commit with message: ${commitMessage.data.choices[0].text}`))
+        console.log(chalk.green.bold(`Created a commit with the message: ${commitMessage.data.choices[0].text}`))
 
       } else {
         console.log(chalk.red.bold('No changes to commit'))
