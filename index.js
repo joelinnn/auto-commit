@@ -11,6 +11,4 @@ program
   .command('add <key>')
   .action(add)
 
-const test = 'dwada'
-
 program.parse()
