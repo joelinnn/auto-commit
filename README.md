@@ -6,6 +6,7 @@ Improve workflow and efficiency by generating commit messages using the GPT-3 mo
 ## Installation
 Clone the repo onto your machine and install the CLI globally:
 ```sh
+git clone https://github.com/joelinnn/auto-commit.git
 npm i -g
 ```
 
