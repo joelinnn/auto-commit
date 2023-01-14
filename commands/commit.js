@@ -23,7 +23,7 @@ const commit = () => {
           prompt: generateMessage,
           max_tokens: 2000,
         })
-        exec(`git commit -m ${commitMessage.data.choices[0].text}`)
+        exec(`git commit -m '${commitMessage.data.choices[0].text}'`)
         console.log(chalk.green.bold(`Created commit with message: ${commitMessage.data.choices[0].text}`))
 
       } else {
