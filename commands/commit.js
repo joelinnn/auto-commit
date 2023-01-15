@@ -16,7 +16,7 @@ const commit = () => {
     exec('git diff --staged --stat --summary', async ( error, stdout, stderr ) => {
       if (stdout) {
         let filesChanged = stdout.split("\n");
-        let generateMessage = 'Write a commit message for the changes in this directory ' + filesChanged.join(',')
+        let generateMessage = 'Write a commit message for the changes in this directory, and only show me the commit message ' + filesChanged.join(',')
 
         const commitMessage = await openai.createCompletion({
           model: 'text-davinci-003',
